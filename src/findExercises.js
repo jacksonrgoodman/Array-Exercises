@@ -54,21 +54,22 @@ export const getInstructorOfStudent = (studentId) => {
 export const getStudentWithMostLangs = () => {
     // ? It should return the student object who knows the most programming languages
     // ?create an empty array to then store student languages in 
-    let mostLangs = []
+    let mostLanguages = []
     students.forEach(student => {
-        mostLangs.push(student.languages.length)
+        mostLanguages.push(student.languages.length)
     })
     //? create an array with the first value to be the largest
-    let largest = [0]
-    //? for each loop that 
-    mostLangs.forEach(language => {
-        if (language > largest[0]) {
-            largest.pop();
-            largest.push(language)
+    let largestLanguage = [0]
+    //? for each loop that compares if language is larger than the 
+    mostLanguages.forEach(language => {
+        if (language > largestLanguage[0]) {
+            largestLanguage.pop();
+            largestLanguage.push(language)
         }
 
     })
-    return students.find(student => student.languages.length === largest[0])
+    //* returns student who knows the most programming languages
+    return students.find(student => student.languages.length === largestLanguage[0])
 }
 // Ex: getStudentWithMostLangs()      // returns Rick Sanchez
 // HINT: You may not need the `find` method for this. This is one of the few cases where a `for` loop might be appropriate
