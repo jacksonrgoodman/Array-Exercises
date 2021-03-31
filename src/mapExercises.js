@@ -1,25 +1,28 @@
-import { useStudents, useInstructors } from "./data/classroom.js";
+import { useStudents } from "./data/classroom.js";
 
 const students = useStudents();
-const instructors = useInstructors();
 
-// Export a function named getStudentNames
+//* Export a function named getStudentNames
+//* It should not accept any parameters`
 export const getStudentNames = () => {
-  return
+  let fullStudentNames = students.map((student) => {
+    //? It should return an array of strings. Each string should be the full name of the student
+    return `${student.firstName} ${student.lastName}`
+  })
+  return fullStudentNames
 }
-// It should not accept any parameters`
-// It should return an array of strings. Each string should be the full name of the student
 
-// Export a function named StudentList
+//* Export a function named StudentList
+//* It should not accept any parameters
 export const StudentList = () => {
-  
-}
-// It should not accept any parameters
-// It should return a single HTMLString that contains a <div> element for every student that looks like the following:
-// Ex:
-/*
-  <div>
-    <h1>Summer Smith</h1>
-    <h2>Cohort 43</h2>
-  </div>
-*/
+  //? create an array for every student 
+  let HtmlString = students.map((student) => {
+    //? return a single HTMLString that contains a <div> element 
+    return `<div>
+      <h1>${student.firstName} ${student.lastName}</h1>
+      <h2>Cohort ${student.cohort}</h2>
+    </div>`;
+  });
+  //? joins the string, adding a space between the first and last name
+  return HtmlString.join(" ");
+};
