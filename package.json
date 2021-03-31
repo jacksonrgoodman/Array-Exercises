@@ -14,7 +14,7 @@
     "jest": "^25.3.0"
   },
   "scripts": {
-    "test": "jest tests/*.js"
+    "test": "jest tests/filter.spec.js tests/find.spec.js tests/map.spec.js"
   },
   "author": "",
   "license": "ISC"

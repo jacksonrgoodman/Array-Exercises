@@ -22,5 +22,4 @@ This exercise is meant to help you indentify any potential weak spots in your kn
 1. Every test that you get to pass, make a commit and push it to github
 
 > NOTE: These exercises are meant to assess your knowledge of `map`, `filter`, and `find`. Many of the tests will not pass if you don't use the correct method, so please avoid using `for` loops
-# array-exercises
-# Array-Exercises
+
