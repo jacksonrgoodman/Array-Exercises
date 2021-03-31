@@ -4,10 +4,16 @@ const students = useStudents();
 const instructors = useInstructors();
 
 // Export a function named getStudentNames
+export const getStudentNames = () => {
+  return
+}
 // It should not accept any parameters`
 // It should return an array of strings. Each string should be the full name of the student
 
 // Export a function named StudentList
+export const StudentList = () => {
+  
+}
 // It should not accept any parameters
 // It should return a single HTMLString that contains a <div> element for every student that looks like the following:
 // Ex:
