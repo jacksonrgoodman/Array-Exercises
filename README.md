@@ -1,3 +1,4 @@
+[![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](#)
 # Self Assessment: Array Methods
 
 This exercise is meant to help you indentify any potential weak spots in your knowledge on array methods. Use your knowledge of `find` `filter` and `map` to implement functions according to the specifications and make the tests pass.
